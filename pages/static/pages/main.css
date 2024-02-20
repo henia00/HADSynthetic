@@ -1,0 +1,15 @@
+:root{
+    --main-bg-color: #FDF0D5;
+    --highlighted-font-color: #780000;
+    --normal-font-color: #003049;
+}
+
+.body {
+    background: var(--main-bg-color);
+}
+
+.title{
+    background: var(--main-bg-color);
+    font-weight: 100px;
+    font-color: var(highlighted-font-color);
+}
