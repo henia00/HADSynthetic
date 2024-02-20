@@ -1,1 +1,14 @@
 {% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block page_content %}
+
+<h5 class="p-4">Select mass, metallicity and overshooting to plot the evolutionary track</h5>
+<form method="get">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit">Submit</button>
+</form>
+
+{% endblock page_content %}
