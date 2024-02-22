@@ -1,15 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 :root{
-    --main-bg-color: #FDF0D5;
-    --highlighted-font-color: #780000;
-    --normal-font-color: #003049;
+    --main-bg-color: #ede7e3;
+    --highlighted-font-color: #16697a;
+    --normal-font-color: black;
+    --button-color: #82c0cc;
 }
 
-.body {
+body {
     background: var(--main-bg-color);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
 }
 
-.title{
-    background: var(--main-bg-color);
-    font-weight: 100px;
-    font-color: var(highlighted-font-color);
+footer{
+    margin-top: auto;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+header h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3em;
+    color: var(--highlighted-font-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+    color: green;
+}
+
+.header-item h5{
+    font-size: 1.5em;
+    color: var(--highlighted-font-color);;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+
+}
+
+.btn{
+    background-color: var(--button-color);
+    padding: 0.5em;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.link-item{
+    margin: 0.8em;
+}
+
+.website-item{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(0,0,0,0.24);
+    margin: 1em;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    flex-grow: 1
+}
+
+.website-item h1{
+    background-color: white;
+}
+
+
+
+.website-header{
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2em;
+    padding: 0.2em;
+    flex-wrap: wrap;
+}
+
+
+nav div{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.test{
+    color: red;
+}
+
+.menu-item{
+    font-family: Arial, sans-serif;
+    font-color: var(--normal-font-color);
+}
+
+a:link{
+    color: var(--normal-font-color);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--highlighted-font-color);
+    font-weight: bold;
 }

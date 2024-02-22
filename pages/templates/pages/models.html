@@ -5,6 +5,10 @@
 {% block page_content %}
 
 <h5 class="p-4">Select mass, metallicity and overshooting to plot the evolutionary track</h5>
+<p class="legend"> <span>Mass range:</span> 0.85 - 2.5 M<sub>&#8857;</sub></p>
+<p class="legend"> <span>[Fe/H] range:</span> -2.0 - 0.0 dex</p>
+<p class="legend"> <span>f<sub>ov</sub> range range:</span> 0.0 - 0.031</p>
+
 <form method="post">
     {% csrf_token %}
     {{ form|crispy }}

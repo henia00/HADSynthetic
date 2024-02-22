@@ -2,26 +2,47 @@
 
 {% block page_content %}
 
-<div class="row">
-    <div class="p-3 col">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Models</h5>
-            <p class="card-text">Query database with theoretical models</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+<section class="container ">
+
+    <div class="website-item">
+        <div class="header-item">
+            <h5>About</h5>
+        </div>
+        <div class="content-item">
+            testnuvbsicbwiu  bie  a iures  sschruie  nvfensu
+        </div>
+        <div class="link-item">
+            <a class="menu-item btn" href="{% url 'about' %}">Read more</a>
         </div>
     </div>
-    <div class="p-3 col">
-         <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">About</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+
+
+    <div class="website-item">
+        <div class="header-item">
+            <h5>Theoretical Models</h5>
+        </div>
+        <div class="content-item">
+            testnuvbsicbwiu  bie  a iures  sschruie  nvfensu
+        </div>
+        <div class="link-item">
+            <a class="menu-item btn" href="{% url 'models' %}">Models</a>
         </div>
     </div>
-</div>
+
+
+    <div class="website-item">
+        <div class="header-item">
+            <h5>Tools</h5>
+        </div>
+        <div class="content-item">
+            testnuvbsicbwiu  bie  a iures  sschruie  nvfensu
+        </div>
+        <div class="link-item">
+            <a class="menu-item btn" href="{% url 'tools' %}">Tools</a>
+        </div>
+    </div>
+
+
+</section>
+
 {% endblock page_content %}
