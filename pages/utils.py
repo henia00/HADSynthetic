@@ -14,7 +14,7 @@ def get_plot():
 
 def make_plot(x,y):
     plt.switch_backend('AGG')
-    plt.figure(figsize=(10,8))
+    # plt.figure(figsize=(10,8))
     plt.gca().invert_xaxis()
     plt.xlabel(r"log T$_{\rm eff}$")
     plt.ylabel(r"log L/L$_\odot$")

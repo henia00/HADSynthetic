@@ -69,7 +69,7 @@ h2 {
 .website-item{
     background-color: white;
     width: 400px;
-    height: 400px;
+    height: 500px;
     border: 1px solid rgba(0,0,0,0.24);
     margin: 1em;
     border-radius: 10%;
@@ -80,11 +80,41 @@ h2 {
     flex-grow: 1
 }
 
+.models-item{
+    background-size: contain;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.24);
+    margin: 1em;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    flex-grow: 0;
+    align-items: center;
+    padding: 1em;
+}
+
+.content-item p{
+    padding: 0.2em;
+    text-align: center;
+}
+
+input{
+    display: block;
+}
+
+.form-group{
+    padding: 0.4em;
+}
+
 .website-item h1{
     background-color: white;
 }
 
-
+.menu-img{
+    height: 15em;
+}
 
 .website-header{
     display: flex;
@@ -101,6 +131,7 @@ nav {
 }
 
 
+
 nav div{
     display: flex;
     width: 50%;
@@ -108,9 +139,7 @@ nav div{
     flex-wrap: wrap;
 }
 
-.test{
-    color: red;
-}
+
 
 .menu-item{
     font-family: Arial, sans-serif;
@@ -125,4 +154,8 @@ a:link{
 a:hover{
     color: var(--highlighted-font-color);
     font-weight: bold;
+}
+
+.literature-item:link{
+    color: red;
 }

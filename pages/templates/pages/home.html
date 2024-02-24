@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block page_content %}
 
@@ -9,7 +10,18 @@
             <h5>About</h5>
         </div>
         <div class="content-item">
-            testnuvbsicbwiu  bie  a iures  sschruie  nvfensu
+            <p>Database of theoretical evolutionary and pulsation models for High-Amplitude Delta
+            Scuti stars.
+            </p>
+
+            <p>Theoretical models calculated with MESA evolutionary code (Paxton et al. 2018).</p>
+
+            <p>Pulsation models calculated with Warsaw pulsation code. We consider only pulsations
+            in radial modes.</p>
+
+            <p>Here we provide tools to browse the database and fit the models to observations of
+            multimode HADS.
+            </p>
         </div>
         <div class="link-item">
             <a class="menu-item btn" href="{% url 'about' %}">Read more</a>
@@ -22,7 +34,8 @@
             <h5>Theoretical Models</h5>
         </div>
         <div class="content-item">
-            testnuvbsicbwiu  bie  a iures  sschruie  nvfensu
+            <p>Browse the database of millions of models of High-Amplitude Delta Scuti stars.</p>
+            <img class="menu-img" src="{% static 'images/track_temp.png' %}" alt="Hi!">
         </div>
         <div class="link-item">
             <a class="menu-item btn" href="{% url 'models' %}">Models</a>
@@ -35,7 +48,7 @@
             <h5>Tools</h5>
         </div>
         <div class="content-item">
-            testnuvbsicbwiu  bie  a iures  sschruie  nvfensu
+            Coming soon: tools to fit pulsation periods of HADS
         </div>
         <div class="link-item">
             <a class="menu-item btn" href="{% url 'tools' %}">Tools</a>
