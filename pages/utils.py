@@ -1,6 +1,7 @@
-import  matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
+
 
 def get_plot():
     buffer = BytesIO()
@@ -12,12 +13,13 @@ def get_plot():
     buffer.close()
     return plot
 
-def make_plot(x,y):
+
+def make_plot(x, y):
     plt.switch_backend('AGG')
     # plt.figure(figsize=(10,8))
     plt.gca().invert_xaxis()
     plt.xlabel(r"log T$_{\rm eff}$")
     plt.ylabel(r"log L/L$_\odot$")
-    plt.scatter(x,y)
+    plt.scatter(x, y)
     plot = get_plot()
     return plot
