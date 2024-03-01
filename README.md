@@ -4,7 +4,6 @@ Tool to browse the database of theoretical models of High-Amplitude Delta Scuti 
 
 <img src="screenshots/home.png" width="100%">
 
-#### Note that the full database is not yet available publicly, but will be soon. Contact the Author if you want to be notified after publication of the complete database.
 
 
 ## Models
@@ -17,7 +16,6 @@ We provide the tool to browse through the database. The User needs to select mas
 ## Tools
 
 HADSynthetic will provide the tools for interactive asteroseismic modeling of multi-mode radially pulsating HADS and SX Phoenicis stars. 
-#### Note that the tools will be available when the database is published. Contact the Author if you want to be notified when that happens!
 
 ## Citing this work
 
